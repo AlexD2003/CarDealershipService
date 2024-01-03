@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="1007.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutY="-1.0" prefHeight="400.0" prefWidth="303.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <HBox prefHeight="50.0" prefWidth="303.0">
+                     <children>
+                        <Label prefHeight="18.0" prefWidth="297.0" text="                                        Cars" textFill="#f80606" />
+                     </children>
+                  </HBox>
+                  <ListView fx:id="CarsListView" prefHeight="199.0" prefWidth="303.0" />
+                  <Label prefHeight="18.0" prefWidth="308.0" text="                                  Reservations" textFill="#15c31b" />
+               </children>
+            </VBox>
+            <ListView fx:id="ReservationsList" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+      <Button fx:id="addCarButton" layoutX="314.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#createCarWindow" text="Add car" />
+      <Button fx:id="addReservationButton" layoutX="380.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#createReservationWindow" text="Add reservation" />
+      <Label layoutX="314.0" layoutY="57.0" prefHeight="55.0" prefWidth="122.0" text="Update car at id:" />
+      <TextField fx:id="textFieldCarId" layoutX="410.0" layoutY="71.0" onKeyPressed="#pressedKey" prefHeight="26.0" prefWidth="24.0" />
+      <Label layoutX="314.0" layoutY="122.0" text="Update reservation at id:" />
+      <TextField fx:id="updateReservationAtIdText" layoutX="459.0" layoutY="118.0" onKeyPressed="#updateReservationIdPressed" prefHeight="25.0" prefWidth="24.0" />
+      <Label layoutX="314.0" layoutY="164.0" text="Remove car at id:" />
+      <TextField fx:id="carIdTextFieldRemove" layoutX="422.0" layoutY="160.0" onKeyPressed="#CarIdTextFieldRemoveContinue" prefHeight="18.0" prefWidth="24.0" />
+      <Label layoutX="314.0" layoutY="200.0" text="Remove reservation at id:" />
+      <TextField fx:id="RemoveReservationAtIdTextField" layoutX="471.0" layoutY="197.0" onKeyPressed="#RemoveReservationAtIdContinue" prefHeight="26.0" prefWidth="24.0" />
+      <Button layoutX="314.0" layoutY="264.0" mnemonicParsing="false" onAction="#ConvertToMemoryButton" onMouseClicked="#ConvertToMemoryButtonContinue" text="Memory" textFill="#4400ff" />
+      <Button fx:id="FileButton" layoutX="409.0" layoutY="264.0" mnemonicParsing="false" onAction="#ConvertToFile" text="File" textFill="#1100ff" />
+      <Button layoutX="495.0" layoutY="264.0" mnemonicParsing="false" onAction="#ConvertToDatabaseButton" onMouseClicked="#ConvertToDatabaseButtonContinue" text="Database" textFill="#1100ff" />
+      <ListView fx:id="CarReports" layoutX="566.0" layoutY="44.0" prefHeight="200.0" prefWidth="200.0" />
+      <ListView fx:id="ReservationReports" layoutX="792.0" layoutY="44.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="580.0" layoutY="6.0" prefHeight="18.0" prefWidth="423.0" text="   Car Reports                                                               Reservation Reports" />
+      <Button fx:id="CarIdLessThanXButton" layoutX="620.0" layoutY="279.0" mnemonicParsing="false" onMouseClicked="#CarIdLessThanXImpl" text="Car Id less than x" />
+      <Button fx:id="YearInRangeButton" layoutX="774.0" layoutY="279.0" mnemonicParsing="false" onMouseClicked="#YearInRangeButtonImplementation" text="Year in range" />
+      <Button fx:id="SameMonthButton" layoutX="321.0" layoutY="342.0" mnemonicParsing="false" onMouseClicked="#SameMonthButtonImplementation" prefHeight="30.0" prefWidth="231.0" text="Get reservations with same month" />
+      <Button fx:id="GetReservationsByName" layoutX="580.0" layoutY="342.0" mnemonicParsing="false" onMouseClicked="#GetReservationsByNameImplementation" text="Get reservations by name" />
+      <Button fx:id="GetCarsByButton" layoutX="794.0" layoutY="345.0" mnemonicParsing="false" onMouseClicked="#GetCarsByModelImplementation" text="Get cars by model" />
+   </children>
+</AnchorPane>
