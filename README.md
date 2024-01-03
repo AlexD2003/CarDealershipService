@@ -1,4 +1,4 @@
-![image](https://github.com/AlexD2003/CarDealershipService/assets/126864652/1438b154-9790-4a00-adc4-0f1a849ab6bd)# Car Rental Service Application
+# Car Rental Service Application
 This Java-based Car Rental Service application is designed to efficiently manage and operate a fictional car rental service. The application utilizes various data storage methods including binary files, text files, memory, and an SQLite database. Built using modular programming principles, the codebase emphasizes data encapsulation, abstraction, and employs a JavaFX-based user interface.
 ---
 ### Features:
@@ -18,8 +18,8 @@ Maven : Dependency management tools.
 ---
 ### Photos and program schemas:
 ---
-[altimg](https://i.ibb.co/zZKWjHM/Screenshot-2024-01-03-104604.png)
+![altimg](https://i.ibb.co/zZKWjHM/Screenshot-2024-01-03-104604.png)
 ---
-[altimg](https://i.ibb.co/DpBsLQb/javalabschemabefore.png)
+![altimg](https://i.ibb.co/DpBsLQb/javalabschemabefore.png)
 ---
-[altimg](https://i.ibb.co/znVrzVn/javalabschemafinal.png)
+![altimg](https://i.ibb.co/znVrzVn/javalabschemafinal.png)
